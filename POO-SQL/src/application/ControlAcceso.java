@@ -13,21 +13,28 @@ public class ControlAcceso implements Initializable{
 	@FXML private TextField txtNombre;	
 	@FXML private Button btnAcceder;
 	@FXML private Button btnCancelar;
-	private Main main;
 	
+	private Main main;
 	public Main getMain() {
 		return main;
 	}
 	public void setMain(Main main) {
 		this.main = main;
 	}
+	
+	
 	@FXML
 	public void abrirPrincipal() {
 		main.abrirPrincipa();
 		main.getPrincipal().close();			
 	}
+	
+	
 	ArrayList<Usuarios> usuarios = new ArrayList<Usuarios>();
 	Usuarios administrador = new Usuarios("Matamoros","1520");
+	
+	
+	
 	public ArrayList<Usuarios> getUsuerios() {
 		return usuarios;
 	}
@@ -35,6 +42,8 @@ public class ControlAcceso implements Initializable{
 		this.usuarios = usuerios;
 	}
 	public void initialize(URL location, ResourceBundle arg1) {}
+	
+	
 	@FXML
 	public void salir() {
 		System.exit(0);

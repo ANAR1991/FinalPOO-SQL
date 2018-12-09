@@ -5,10 +5,12 @@ import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
+
+
+
 public class Main extends Application {
 	
 	private ControlAcceso controlAcceso;
-	//private ControlPrincipal controlPrincipal;
 	public Stage getPrincipal() {
 		return principal;
 	}
@@ -75,20 +77,10 @@ public class Main extends Application {
 	}
 	public void esenaAsientoContable() {
 		try {
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("AsientoContable.fxml"));
-			AnchorPane root = (AnchorPane)loader.load();
-			asientoContable = new Scene(root);
-			asientoContable.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			interfasControl.setScene(asientoContable);
-			controlContable = loader.getController();
-			controlContable.setMain(this);
-			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		interfasControl.show();
 	}
 	
 	public static void main(String[] args) {

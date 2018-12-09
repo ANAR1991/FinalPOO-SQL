@@ -5,9 +5,6 @@ import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
-
-
-
 public class Main extends Application {
 	
 	private ControlAcceso controlAcceso;
@@ -65,23 +62,30 @@ public class Main extends Application {
 			interfasControl.setTitle("POO-SQL");
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			interfasControl.setScene(scene);
-			//controlPrincipal = loader.getController();
-			//controlPrincipal.setMain(this);
-			//interfasControl.initOwner(principal);
-			//interfasControl.initModality(Modality.WINDOW_MODAL);
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		interfasControl.show();
 	}
-	public void esenaAsientoContable() {
-		try {
-			
-		} catch (Exception e) {
-			e.printStackTrace();
+	
+	
+	public void esenaAsientoContable(){
+		if (asientoContable == null){
+			try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(getClass().getResource("AsientoContable.fxml"));
+				AnchorPane root = (AnchorPane)loader.load();
+				asientoContable = new Scene(root);
+				asientoContable.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+				controlContable = loader.getController();
+				controlContable.setMain(this);
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
 		}
+		interfasControl.setScene(asientoContable);
 	}
+	
 	
 	public static void main(String[] args) {
 		launch(args);

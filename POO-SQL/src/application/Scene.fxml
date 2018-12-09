@@ -7,13 +7,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlAcceso">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AsientoContable">
    <children>
       <TextArea layoutX="7.0" layoutY="319.0" prefHeight="150.0" prefWidth="587.0" text="           .---.        .-&quot;-. &#10;         /   6_6    / 4 4 \&#10;         \_  (__\    \_ v _/&#10;         //   \\      //   \\&#10;        ((     ))      ((     ))&#10;  =======&quot;&quot;===&quot;&quot;========SQL-POO=======&#10;           |||            |||&#10;            |              |" />
       <Button layoutX="14.0" layoutY="184.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="143.0" text="Estado de Resultado" />
       <Button layoutX="14.0" layoutY="102.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="143.0" text="Registro" />
       <ButtonBar layoutX="418.0" layoutY="455.0" prefHeight="22.0" prefWidth="114.0" />
-      <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#esenaAsientoContable" prefHeight="32.0" prefWidth="143.0" text="Asiento Contable" />
+      <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#esenaAsientoContble" prefHeight="32.0" prefWidth="143.0" text="Asiento Contable" />
       <Button layoutX="14.0" layoutY="261.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="143.0" text="Lista Usuarios" />
       <Button layoutX="14.0" layoutY="63.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="143.0" text="Partida Doble" />
       <Button layoutX="14.0" layoutY="222.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="143.0" text="Nuevo Usuario" />

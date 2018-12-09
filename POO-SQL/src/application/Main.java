@@ -7,13 +7,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
 public class Main extends Application {
 	
-	private ControlAcceso controlAcceso;
-	public Stage getPrincipal() {
-		return principal;
-	}
-	public void setPrincipal(Stage principal) {
-		this.principal = principal;
-	}
+	
 	private Scene asientoContable;
 	private Scene partidaDoble;
 	private Scene registro;
@@ -25,6 +19,7 @@ public class Main extends Application {
 	private Stage principal;
 	private Stage interfasControl;
 	
+	private ControlAcceso controlAcceso;
 	private AsientoContable controlContable;
 	private BalanceGeneral controlGeneral;
 	private EstadoResultados controlResultados;
@@ -33,10 +28,18 @@ public class Main extends Application {
 	private Registro controlRegistro;
 	private PartidaDoble controlDoble;
 	
+	public Stage getPrincipal() {
+		return principal;
+	}
+	public void setPrincipal(Stage principal) {
+		this.principal = principal;
+	}
+	
 	
 	
 	public void start(Stage acceso) {
 		principal=acceso;
+		interfasControl=acceso;
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(getClass().getResource("Acceso.fxml"));
@@ -67,25 +70,21 @@ public class Main extends Application {
 		}
 		interfasControl.show();
 	}
-	
-	
 	public void esenaAsientoContable(){
-		if (asientoContable == null){
-			try {
-				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(getClass().getResource("AsientoContable.fxml"));
-				AnchorPane root = (AnchorPane)loader.load();
-				asientoContable = new Scene(root);
-				asientoContable.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-				controlContable = loader.getController();
-				controlContable.setMain(this);
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(getClass().getResource("AsientoContable.fxml"));
+			AnchorPane root = (AnchorPane)loader.load();
+			asientoContable = new Scene(root);
+			interfasControl.setScene(asientoContable);
+			controlContable = loader.getController();
+			controlContable.setMain(this);
+			
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
-		}
-		interfasControl.setScene(asientoContable);
+		
 	}
-	
 	
 	public static void main(String[] args) {
 		launch(args);

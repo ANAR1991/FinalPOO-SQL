@@ -39,10 +39,11 @@ public class ControlPrincipal implements Initializable{
 	public void setMain(Main main) {
 		this.main = main;
 	}
+	public void initialize(URL location, ResourceBundle arg1) {	
+	}
+	@FXML
 	public void esenaAsientoContble(){
 		main.esenaAsientoContable();
-	}
-	public void initialize(URL location, ResourceBundle arg1) {	
 	}
 	@FXML
 	public void salir() {

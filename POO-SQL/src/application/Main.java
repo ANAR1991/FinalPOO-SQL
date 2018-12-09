@@ -75,29 +75,15 @@ public class Main extends Application {
 	}
 	public void esenaAsientoContable() {
 		try {
-			
-			
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("Escena2.fxml"));
+			loader.setLocation(getClass().getResource("AsientoContable.fxml"));
 			AnchorPane root = (AnchorPane)loader.load();
 			asientoContable = new Scene(root);
-			//formularioPrincipal.setScene(scene2);
-			//escena2Controller = loader.getController();
-			//escena2Controller.setMain(this);
+			asientoContable.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			interfasControl.setScene(asientoContable);
+			controlContable = loader.getController();
+			controlContable.setMain(this);
 			
-			
-			/*interfasControl= new Stage();
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("Scene.fxml"));
-			AnchorPane root = (AnchorPane)loader.load();
-			Scene scene = new Scene(root);
-			interfasControl.setTitle("POO-SQL");
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			interfasControl.setScene(scene);
-			//controlPrincipal = loader.getController();
-			//controlPrincipal.setMain(this);
-			//interfasControl.initOwner(principal);
-			//interfasControl.initModality(Modality.WINDOW_MODAL);*/
 			
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -8,10 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AsientoContable">
    <children>
-      <Button layoutX="68.0" layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="Agregar Asiento" />
+      <Button layoutX="221.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="146.0" text="Agregar Asiento" />
       <ComboBox layoutX="37.0" layoutY="132.0" prefHeight="25.0" prefWidth="209.0" />
       <ComboBox layoutX="37.0" layoutY="192.0" prefHeight="25.0" prefWidth="209.0" />
       <Label layoutX="112.0" layoutY="97.0" prefHeight="25.0" prefWidth="58.0" text="Cuentas">
@@ -20,7 +19,7 @@
          </font>
       </Label>
       <TextField layoutX="266.0" layoutY="132.0" prefHeight="25.0" prefWidth="114.0" />
-      <TextArea layoutX="12.0" layoutY="346.0" prefHeight="131.0" prefWidth="576.0" />
+      <TextArea layoutX="12.0" layoutY="320.0" prefHeight="157.0" prefWidth="576.0" />
       <TextField layoutX="390.0" layoutY="167.0" prefHeight="25.0" prefWidth="114.0" />
       <TextField layoutX="390.0" layoutY="132.0" prefHeight="25.0" prefWidth="114.0" />
       <TextField layoutX="266.0" layoutY="167.0" prefHeight="25.0" prefWidth="114.0" />
@@ -45,5 +44,6 @@
       <TextField layoutX="389.0" layoutY="221.0" prefHeight="25.0" prefWidth="58.0" />
       <TextField layoutX="265.0" layoutY="221.0" prefHeight="25.0" prefWidth="58.0" />
       <Button layoutX="483.0" layoutY="221.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Guardar" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="Anterior" />
    </children>
 </AnchorPane>

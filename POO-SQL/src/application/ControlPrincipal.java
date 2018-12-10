@@ -46,6 +46,30 @@ public class ControlPrincipal implements Initializable{
 		main.esenaAsientoContable();
 	}
 	@FXML
+	public void esenaBalanceGeneral(){
+		main.esenaBalanceGeneral();
+	}
+	@FXML
+	public void esenaEstadoResultados(){
+		main.esenaEstadoResultados();
+	}
+	@FXML
+	public void esenaListaUsuarios(){
+		main.esenaListaUsuarios();
+	}
+	@FXML
+	public void esenaNuevoUsuario(){
+		main.esenaNuevoUsuario();
+	}
+	@FXML
+	public void esenaRegistro(){
+		main.esenaRegistro();
+	}
+	@FXML
+	public void esenaPartidaDoble(){
+		main.esenaPartidaDoble();
+	}
+	@FXML
 	public void salir() {
 		System.exit(0);
 	}

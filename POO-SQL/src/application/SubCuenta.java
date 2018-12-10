@@ -1,8 +1,6 @@
 package application;
 
-import javafx.fxml.FXML;
-
-public class NuevoUsuarios {
+public class SubCuenta {
 	private Main main;
 
 	public Main getMain() {
@@ -12,4 +10,6 @@ public class NuevoUsuarios {
 	public void setMain(Main main) {
 		this.main = main;
 	}
+	
+
 }
